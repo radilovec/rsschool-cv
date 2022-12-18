@@ -389,7 +389,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 .container  {
@@ -451,4 +450,107 @@ a {
 .item_link:hover,
 .item_link:active {
     color: rgb(231, 231, 231);
+}
+
+/* HEADER END */
+
+/* ABOUT ME START */
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    border-bottom: 8px solid #694e4e;
+}
+
+.me_img {
+    height: 200px;
+    width: 200px;
+}
+
+.me_pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.inf_about_me {
+    text-align: center;
+}
+
+.my_name {
+    color: #663333;
+    font-size: 32px;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.my_name::after {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 2px;
+    background-color: #CC9999;
+    margin: 0 auto;
+}
+
+.my_job {
+    color: #8f4a4a;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* ABOUT ME END */
+
+
+/* MAIN INF START */
+
+.main_inf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.main_inf_block {
+    width: 48%;
+    height: 200px;
+}
+
+.main_inf_title {
+    font-family: Montserrat-Medium;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 10px;
+    color: #CC9999;
+    margin-bottom: 35px;
+}
+
+.contacts_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main_inf_link {
+    color: #CC9999;
+    transition: all .4s ease;
+}
+
+.main_inf_link:hover,
+.main_inf_link:active {
+    color: #9b7777;
+}
+
+.main_inf_item {
+    padding-left: 30px;
 }
