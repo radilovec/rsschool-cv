@@ -18,12 +18,12 @@
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="#summary" class="item_link">
                             Summary
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="#skills" class="item_link">
                             Skills
                         </a>
                     </li>
@@ -33,22 +33,22 @@
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="projects" class="item_link">
                             Projects
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="#courses" class="item_link">
                             Courses
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="#education" class="item_link">
                             Educations
                         </a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="item_link">
+                        <a href="#english" class="item_link">
                             English
                         </a>
                     </li>
@@ -87,29 +87,97 @@
                         <li class="contacts_item_5 main_inf_item">Discord: <a href="https://discordapp.com/users/576813100997541890/" class="contacts_link main_inf_link">silence#9325</a></li>
                     </ul>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block summary" id="summary">
+                    <h2 class="main_inf_title">
+                        summary
+                    </h2>
+                    <p class="summary_text">
+                        I like programming. It is fascinating and interesting. I have a main job, programming is a hobby for me. I have completed several training projects and now I would like to take part in the creation of a real JavaScript project. My goal is to learn a pure JavaScript at a good level and learn the React library. I will be glad to join the creation of open source projects. I would like to work under the guidance of an experienced developer to gain practical experience.
+                    </p>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block skills" id="skills">
+                    <h2 class="main_inf_title">
+                        skills
+                    </h2>
+                    <ul class="skills_list">
+                        <li class="skills_list_item">Web-development: <span class="skills_list_item_color">HTML5, CSS3, JavaScript</span></li>
+                        <li class="skills_list_item">Version control: <span class="skills_list_item_color">HTML5, CSS3, JavaScript</span></li>
+                        <li class="skills_list_item">Graphics: <span class="skills_list_item_color">Figma</span></li>
+                    </ul>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block code" id="code">
+                    <h2 class="main_inf_title">
+                        code
+                    </h2>
+                    <code>
+                        <pre>
+<span class="code_color_bl">if</span> (!localStorage. <span class="code_color_red">getItem</span> (<span class="code_color_gr">'name'</span> )) {
+    <span class="code_color_red">setUserName</span> ();
+  } <span class="code_color_bl">else</span> {
+    <span class="code_color_bl">var</span> storedName = localStorage.<span class="code_color_red">getItem</span>(<span class="code_color_gr">'name'</span> );
+    myHeading.textContent = '<span class="code_color_gr">Mozilla is cool, </span>' + storedName;
+  }
+                        </pre>
+                    </code>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block courses" id="courses">
+                    <h2 class="main_inf_title">
+                        courses
+                    </h2>
+                    <ul class="courses_list">
+                        <li class="courses_list_item">Rolling Scopes School - <span class="courses_list_item_color"> Web Development By Doing: HTML / CSS </span> </li>
+                        <li class="courses_list_item">Rolling Scopes School - <span class="courses_list_item_color"> Web Development By Doing: HTML / CSS </span> </li>
+                        <li class="courses_list_item">Rolling Scopes School - <span class="courses_list_item_color"> Web Development By Doing: HTML / CSS </span> </li>
+                        <li class="courses_list_item">Rolling Scopes School - <span class="courses_list_item_color"> Web Development By Doing: HTML / CSS </span> </li>
+                    </ul>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block projects" id="projects">
+                    <h2 class="main_inf_title">
+                        projects
+                    </h2>
+                    <ul class="projects_list">
+                        <li class="projects_list_item"><a href="#" class="project_list_link">None</a></li>
+                        <li class="projects_list_item"><a href="#" class="project_list_link">None</a></li>
+                        <li class="projects_list_item"><a href="#" class="project_list_link">None</a></li>
+                        <li class="projects_list_item"><a href="#" class="project_list_link">None</a></li>
+                    </ul>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block education main_inf_block_sm" id="education">
+                    <h2 class="main_inf_title">
+                        education
+                    </h2>
+                    <p class="education_text">
+                        Belarusian State University
+                    </p>
                 </div>
-                <div class="main_inf_block">
-
+                <div class="main_inf_block english main_inf_block_sm" id="english">
+                    <h2 class="main_inf_title">
+                        english
+                    </h2>
+                    <p class="english_text">
+                        A2 - below average
+                    </p>
                 </div>
             </section>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inf">
+                <div class="footer_text">
+                    <p class="footer_text_year">
+                        &#169;2022
+                    </p>
+                    <a href="https://github.com/radilovec" class="footer_text_link">
+                        radilovec
+                    </a>
+                </div>
+                <a href="" class="footer_logo">
+                    <img src="./img/svg/rs_school.svg" alt="rs-school" class="footer_svg">
+                </a>
+            </div>
+            </div>
+    </footer>
 </body>
 </html>

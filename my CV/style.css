@@ -391,6 +391,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    color: #CC9999;
+}
+
 .container  {
     width: 1560px;
     margin: 0 auto;
@@ -408,12 +412,11 @@ a {
     background-color: #CC9999;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: end;
 }
 
 .header_nav {
     color: #fff;
-    width: 750px;
 }
 
 .nav_list {
@@ -518,12 +521,32 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .main_inf_block {
     width: 48%;
-    height: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.main_inf_block::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #663333;
+}
+
+.main_inf_block:nth-child(7)::after,
+.main_inf_block:nth-child(8)::after {
+    width: 0;
 }
 
 .main_inf_title {
@@ -539,6 +562,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
 }
 
 .main_inf_link {
@@ -553,4 +577,186 @@ a {
 
 .main_inf_item {
     padding-left: 30px;
+    color: #000;
+}
+
+.contacts_item_1::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(./img/svg/location.svg) center no-repeat;
+    background-size: 18px;
+}
+
+.contacts_item_2::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(./img/svg/mail.svg) center no-repeat;
+    background-size: 18px;
+}
+
+.contacts_item_3::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(./img/svg/github-mark.svg) center no-repeat;
+    background-size: 18px;
+}
+
+.contacts_item_4::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(./img/svg/telegram.svg) center no-repeat;
+    background-size: 18px;
+}
+
+.contacts_item_5::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url(./img/svg/discord.svg) center no-repeat;
+    background-size: 18px;
+}
+
+.summary_text {
+    line-height: 1.5;
+}
+
+.skills_list {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills_list_item {
+    list-style-type: circle;
+}
+
+.skills_list_item_color {
+    color: #000;
+}
+
+.code_color_bl {
+    color: blue;
+}
+
+.code_color_gr {
+    color: green;
+}
+
+.code_color_red {
+    color: red;
+}
+
+.courses_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.courses_list_item {
+    list-style-type: circle;
+    color: #000;
+}
+
+.courses_list_item_color {
+    color: #CC9999;
+}
+
+.projects_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.projects_list_item {
+    list-style-type: circle;
+    color: #CC9999;
+}
+
+.education_text {
+    font-size: 18px;
+}
+
+.project_list_link {
+    color: #CC9999;
+    transition: all .4s ease;
+}
+
+.project_list_link:hover,
+.project_list_link:active {
+    color: #000;
+}
+
+.main_inf_block_sm {
+    height: 150px;
+}
+
+.footer {
+    width: 100%;
+    height: 90px;
+    background-color: #CC9999;
+}
+
+.footer_inf {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_text {
+    display: flex;
+    width: 120px;
+    color: #fff;
+    gap: 20px;
+}
+
+.footer_logo {
+    height: 90px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer_svg {
+    height: 70px;
+    width: auto;
+}
+
+.footer_text_link {
+    color: #fff;
+    position: relative;
+}
+
+.footer_text_link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    background: rgb(231, 231, 231);
+    transition: all .6s ease-in-out;
+}
+
+.footer_text_link:hover::after,
+.footer_text_link:active::after {
+    width: 100%;
 }
