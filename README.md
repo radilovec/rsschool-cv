@@ -1,1 +1,1 @@
-# rsschool-cv
+https://radilovecn.github.io/rsschool-cv/
