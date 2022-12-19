@@ -1,4 +1,4 @@
 # rsschool-cv
 # https://radilovec.github.io/rsschool-cv/cv
 # https://radilovec.github.io/rsschool-cv/
-# https://GITHUB-USERNAME.github.io/rsschool-cv-html/
+# https://radilovec.github.io/rsschool-cv-html/
